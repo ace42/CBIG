@@ -207,6 +207,7 @@ echo "=========================== Plot mcflirt parameters ======================
 foreach curr_bold ($zpdbold)
 	pushd $curr_bold
 	
+	set boldfile = $subject"_bld"$curr_bold$echo_stem$BOLD_stem
 	pwd |& tee -a $LF
 	set mc_par_file = ${boldfile}_mc.par
 	set mc_abs_rms_file = ${boldfile}_mc_abs.rms
